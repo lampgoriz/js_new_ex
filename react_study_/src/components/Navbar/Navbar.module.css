@@ -1,0 +1,40 @@
+.nav {
+  grid-area: nav;
+  padding: 10px;
+  max-height: 600px;
+  border: 1px solid rgba(97, 97, 97, 0.12);
+  border-radius: 10px;
+  background-color: rgba(97, 97, 97, 0.12);
+}
+.nav ul {
+  list-style: none;
+}
+.nav li {
+  margin: 10px 0;
+}
+.nav a {
+  color: #616161;
+  text-decoration: none;
+}
+.nav a.active {
+  color: #000;
+  font-weight: 600;
+}
+
+.friends_header {
+  margin: 20px 0 10px 0;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.friends_list {
+  display: flex;
+}
+.friends_list > :nth-child(1n) {
+  margin-right: 10px;
+}
+.friends_list img {
+  width: 50px;
+}
+
+/*# sourceMappingURL=Navbar.module.css.map */

@@ -1,0 +1,11 @@
+.post {
+  margin-bottom: 10px;
+}
+.post:last-child {
+  margin-bottom: 0;
+}
+.post img {
+  width: 50px;
+}
+
+/*# sourceMappingURL=Post.module.css.map */

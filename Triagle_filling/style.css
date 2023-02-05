@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: sans-serif;
+}
+
+input{
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: rgba(227, 225, 225, 0.76);
+}
+
+.toggle__form_button{
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    transition: .3s;
+    z-index: 100;
+}
+
+.toggle__form_button:hover{
+    background-color: #fff;
+    box-shadow: 2px 3px 4px #808080;
+}
+
+.container{
+    background-color: #808080;
+    height: 700px;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.from-wrapper{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    background-color: rgba(147, 142, 142, 0.59);
+    text-align: center;
+}
+
+.js-active_form{
+    display: block;
+}
+
+.form{
+    height: 300px;
+    width: 300px;
+    padding: 0 15px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgb(83, 83, 83);
+    border-radius: 7px;
+    color: #c4c4c4;
+}
+
+.form__input{
+    margin-top: 10px;
+}
+
+.form__input:focus{
+    background-color: #fff;
+}
+
+.form__button{
+    display: inline-block;
+    margin: 15px auto 5px auto;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.form__button:hover{
+    background-color: #fff;
+}
+
+.form__message{
+    display: block;
+}
+
+.form__message_coordinate{
+    margin-top: 35px;
+}
+
+.form__message_length{
+    margin: 20px 0 -5px 0;
+}
+
+.submit_message-ok{
+    color: rgba(61, 255, 0, 0.71);
+}
+
+.form__message_submit{
+    display: none;
+    color: rgb(255, 0, 0);
+}
+
+.error-active{
+    display: block;
+}

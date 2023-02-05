@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+input{
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(109, 107, 107, 0.4);
+    margin: 40px 70px 0 70px;
+    height: 30px;
+    opacity: 0.3;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.modal-toggle{
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-top: 5px solid #000;
+    border-left: 5px solid #000;
+    border-radius: 7px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: .4s;
+    cursor: pointer;
+    border-color: rgba(191, 191, 191, 0.5);
+}
+.modal-toggle:hover{
+    border-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal-toggle-active{
+    border-bottom: 5px solid #000;
+    border-right: 5px solid #000;
+    border-top: none;
+    border-left: none;
+    border-color: rgba(191, 191, 191, 0.5);
+    transition: .4s;
+}
+
+.modal-toggle-active:hover{
+    border-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 28px;
+    background: rgba(191, 191, 191, 0.32);
+    border-radius: 25px;
+    padding: 15px;
+    transition: 1s;
+}
+
+.modal-inactive{
+    display: none;
+    transition: 1s;
+}
+
+.modal_input{
+    height: 30px;
+    padding: 0 15px;
+
+    font-size: 22px;
+}
+
+.modal_input:focus{
+    border-color: rgba(109, 107, 107, 1);
+    opacity: .5;
+}
+
+.modal_button{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.modal_button:hover{
+    opacity: .7;
+}
+
+.modal_button:active{
+    opacity: 1;
+}

@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1000px;
+}
+
+input.button {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  padding: 7px;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 7px;
+  opacity: 0.5;
+}
+input.button:hover {
+  cursor: pointer;
+  opacity: 1;
+  box-shadow: 0 2px 5px #000;
+}
+input.button:disabled:hover {
+  box-shadow: 0 0 0;
+  opacity: 0.5;
+}
+
+.note__form_container {
+  margin-top: 10px;
+  padding: 0 15px;
+  border: 1px solid #8b8a8a;
+  border-radius: 10px;
+  height: 200px;
+  max-width: 970px;
+}
+
+.note__form {
+  display: flex;
+  flex-direction: column;
+}
+.note__form :nth-child(1n) {
+  display: block;
+  margin-top: 15px;
+  padding: 7px;
+}
+
+.note__form_body {
+  height: 80px;
+  resize: none;
+}
+
+.note__form_button {
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+.input__error {
+  color: #ff0000;
+  border: 1px solid #ff0000;
+}
+
+.note__items_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.note__items_container:nth-child(1) {
+  height: 200px;
+  background-color: aquamarine;
+}
+
+.note__item {
+  position: relative;
+  width: 45%;
+  padding: 15px 15px 25px 15px;
+  margin-bottom: 30px;
+  border: 1px solid #8b8a8a;
+  border-radius: 7px;
+  box-shadow: 0 3px 8px #494949;
+}
+.note__item > :nth-child(1n) {
+  margin-bottom: 15px;
+}
+.note__item > :last-child {
+  margin-bottom: 0;
+}
+.note__item_active {
+  background-color: rgba(0, 253, 253, 0.18);
+}
+.note__item_done {
+  background-color: rgba(253, 152, 0, 0.11);
+}
+
+.note__item_buttons {
+  display: flex;
+}
+
+.note__item_button {
+  text-transform: uppercase;
+}
+
+.note__item-info {
+  position: absolute;
+  bottom: 3px;
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+}
+.note__item-info span {
+  color: #898989;
+}
+
+/*# sourceMappingURL=style.css.map */

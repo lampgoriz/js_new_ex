@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    min-height: 100vh;
+    background-color: #aaaaaa;
+    overflow: hidden;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    padding: 10% 0;
+}
+
+.column{
+    width: 30px;
+    background-color: black;
+}
+
+.column_1{
+    height: 600px;
+}
+
+.column_2{
+    height: 400px;
+}
+
+.column_3{
+    height: 500px;
+}
+
+.column_4{
+    height: 300px;
+}

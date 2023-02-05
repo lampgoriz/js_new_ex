@@ -1,0 +1,9 @@
+.post{
+  margin-bottom: 10px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  img{
+    width: 50px;
+  }
+}

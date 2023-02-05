@@ -1,0 +1,18 @@
+$backColor: rgba(97, 97, 97, 0.12);
+
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+
+  border: 1px solid $backColor;
+  border-radius: 10px;
+  background-color: $backColor;
+  &>:nth-child(1n){
+    padding: 10px;
+  }
+}
+
+.dialogs_items{
+  border-right: 1px solid $backColor;
+}
+

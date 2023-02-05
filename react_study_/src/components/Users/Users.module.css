@@ -1,0 +1,15 @@
+.user_item {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user__photo {
+  width: 40px;
+}
+
+.selectedPage {
+  font-weight: 800;
+}
+
+/*# sourceMappingURL=Users.module.css.map */

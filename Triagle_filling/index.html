@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Triangle filling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<input type="button" value="Toggle form" class="toggle__form_button">
+
+<div class="container">
+    <canvas height='320' width='480' id='example'></canvas>
+</div>
+
+<div class="from-wrapper ">
+    <form class="form">
+        <span class="form__message form__message_coordinate">Write coordinate of triangle start apex</span>
+        <input type="text" class="form__input" placeholder="X (0 - 600)">
+        <input type="text" class="form__input" placeholder="Y (100 - 700)">
+        <span class="form__message form__message_length">Write a length of triangle side</span>
+        <input type="text" class="form__input" disabled placeholder="Length">
+        <div>
+            <input type="button" class="form__button form__button_submit" value="SUBMIT">
+            <input type="button" class="form__button form__button_clear" value="CLEAR">
+        </div>
+
+        <span class="form__message form__message_submit ">Error, incorrect value </span>
+    </form>
+</div>
+
+<script src="JS/Data.js"></script>
+<script src="JS/Logic.js"></script>
+<script src="JS/View.js"></script>
+<script src="JS/index.js"></script>
+</body>
+</html>

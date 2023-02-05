@@ -1,0 +1,17 @@
+$backColor: rgba(97, 97, 97, 0.12);
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  grid-area: header;
+  border-bottom: 1px solid $backColor;
+  border-left: 1px solid $backColor;
+  border-right: 1px solid $backColor;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: $backColor;
+
+  img {
+    width: 50px;
+  }
+}
